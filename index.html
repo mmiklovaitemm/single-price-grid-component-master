@@ -44,7 +44,19 @@
           <p class="bottom-left-section-text">
             Full access for less than $1 a day
           </p>
-          <button class="bottom-left-section-button">Sign Up</button>
+          <!-- Modal (pradžioje paslėptas) -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <h2>Welcome!</h2>
+              <p>Thank you for signing up to our community!</p>
+              <button id="close-modal" class="close-button">Close</button>
+            </div>
+          </div>
+
+          <!-- Tavo esamas mygtukas -->
+          <button class="bottom-left-section-button" onclick="openModal()">
+            Sign Up
+          </button>
         </div>
 
         <div class="bottom-right-section">
@@ -61,5 +73,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
